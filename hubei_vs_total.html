@@ -1,0 +1,1463 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>湖北、重庆、全国病例变化趋势</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+
+    
+</head>
+<body>
+        <style>
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 12px 16px;
+            transition: 0.3s;
+        }
+
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+        .chart-container {
+            display: none;
+            padding: 6px 12px;
+            border-top: none;
+        }
+    </style>
+    <div class="tab">
+            <button class="tablinks" onclick="showChart(event, '682b6b4a34b5416198d9571fb6abc14f')">累计确诊人数</button>
+            <button class="tablinks" onclick="showChart(event, 'a8512226ba544658bf6123355ca9c54c')">累计治愈人数</button>
+            <button class="tablinks" onclick="showChart(event, '46ee2d8083c44e4ea5b51a469c967718')">累计死亡人数</button>
+    </div>
+
+    <div class="box">
+                <div id="682b6b4a34b5416198d9571fb6abc14f" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_682b6b4a34b5416198d9571fb6abc14f = echarts.init(
+            document.getElementById('682b6b4a34b5416198d9571fb6abc14f'), 'white', {renderer: 'canvas'});
+        var option_682b6b4a34b5416198d9571fb6abc14f = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#bc5090",
+        "#ffa600",
+        "#ff6361",
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "line",
+            "name": "\u6e56\u5317",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "step": false,
+            "data": [
+                [
+                    "02-08",
+                    27013
+                ],
+                [
+                    "02-09",
+                    29631
+                ],
+                [
+                    "02-10",
+                    31728
+                ],
+                [
+                    "02-11",
+                    33366
+                ],
+                [
+                    "02-12",
+                    47163
+                ],
+                [
+                    "02-13",
+                    51986
+                ],
+                [
+                    "02-14",
+                    54406
+                ],
+                [
+                    "02-15",
+                    56249
+                ],
+                [
+                    "02-16",
+                    58182
+                ],
+                [
+                    "02-17",
+                    59989
+                ],
+                [
+                    "02-18",
+                    61682
+                ],
+                [
+                    "02-19",
+                    62457
+                ],
+                [
+                    "02-20",
+                    63088
+                ],
+                [
+                    "02-21",
+                    63454
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        },
+        {
+            "type": "line",
+            "name": "\u91cd\u5e86",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "step": false,
+            "data": [
+                [
+                    "02-08",
+                    446
+                ],
+                [
+                    "02-09",
+                    468
+                ],
+                [
+                    "02-10",
+                    486
+                ],
+                [
+                    "02-11",
+                    505
+                ],
+                [
+                    "02-12",
+                    518
+                ],
+                [
+                    "02-13",
+                    529
+                ],
+                [
+                    "02-14",
+                    537
+                ],
+                [
+                    "02-15",
+                    544
+                ],
+                [
+                    "02-16",
+                    551
+                ],
+                [
+                    "02-17",
+                    553
+                ],
+                [
+                    "02-18",
+                    555
+                ],
+                [
+                    "02-19",
+                    560
+                ],
+                [
+                    "02-20",
+                    567
+                ],
+                [
+                    "02-21",
+                    572
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        },
+        {
+            "type": "line",
+            "name": "\u5168\u56fd",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "step": false,
+            "data": [
+                [
+                    "02-08",
+                    37149
+                ],
+                [
+                    "02-09",
+                    40218
+                ],
+                [
+                    "02-10",
+                    42701
+                ],
+                [
+                    "02-11",
+                    44728
+                ],
+                [
+                    "02-12",
+                    58835
+                ],
+                [
+                    "02-13",
+                    63932
+                ],
+                [
+                    "02-14",
+                    66574
+                ],
+                [
+                    "02-15",
+                    68580
+                ],
+                [
+                    "02-16",
+                    70632
+                ],
+                [
+                    "02-17",
+                    72528
+                ],
+                [
+                    "02-18",
+                    74274
+                ],
+                [
+                    "02-19",
+                    75098
+                ],
+                [
+                    "02-20",
+                    76005
+                ],
+                [
+                    "02-21",
+                    76404
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u6e56\u5317",
+                "\u91cd\u5e86",
+                "\u5168\u56fd"
+            ],
+            "selected": {
+                "\u6e56\u5317": true,
+                "\u91cd\u5e86": true,
+                "\u5168\u56fd": true
+            },
+            "show": true,
+            "left": "60%",
+            "top": "5%",
+            "orient": "horizontal",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "axis",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "shadow"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "02-08",
+                "02-09",
+                "02-10",
+                "02-11",
+                "02-12",
+                "02-13",
+                "02-14",
+                "02-15",
+                "02-16",
+                "02-17",
+                "02-18",
+                "02-19",
+                "02-20",
+                "02-21"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "type": "value",
+            "name": "\u4eba\u6570",
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "axisTick": {
+                "show": true,
+                "alignWithLabel": false,
+                "inside": false
+            },
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "text": "2-8\u81f32-22\u4e4b\u95f4\u7d2f\u8ba1\u786e\u8bca\u75c5\u4f8b\u53d8\u5316\u8d8b\u52bf",
+            "left": "20%",
+            "top": "5%",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_682b6b4a34b5416198d9571fb6abc14f.setOption(option_682b6b4a34b5416198d9571fb6abc14f);
+    </script>
+                <div id="a8512226ba544658bf6123355ca9c54c" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_a8512226ba544658bf6123355ca9c54c = echarts.init(
+            document.getElementById('a8512226ba544658bf6123355ca9c54c'), 'white', {renderer: 'canvas'});
+        var option_a8512226ba544658bf6123355ca9c54c = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#bc5090",
+        "#ffa600",
+        "#ff6361",
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "line",
+            "name": "\u6e56\u5317",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "step": false,
+            "data": [
+                [
+                    "02-08",
+                    1439
+                ],
+                [
+                    "02-09",
+                    1795
+                ],
+                [
+                    "02-10",
+                    2222
+                ],
+                [
+                    "02-11",
+                    2639
+                ],
+                [
+                    "02-12",
+                    3172
+                ],
+                [
+                    "02-13",
+                    3862
+                ],
+                [
+                    "02-14",
+                    4774
+                ],
+                [
+                    "02-15",
+                    5623
+                ],
+                [
+                    "02-16",
+                    6639
+                ],
+                [
+                    "02-17",
+                    7862
+                ],
+                [
+                    "02-18",
+                    9128
+                ],
+                [
+                    "02-19",
+                    10337
+                ],
+                [
+                    "02-20",
+                    11788
+                ],
+                [
+                    "02-21",
+                    13557
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        },
+        {
+            "type": "line",
+            "name": "\u91cd\u5e86",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "step": false,
+            "data": [
+                [
+                    "02-08",
+                    39
+                ],
+                [
+                    "02-09",
+                    51
+                ],
+                [
+                    "02-10",
+                    66
+                ],
+                [
+                    "02-11",
+                    79
+                ],
+                [
+                    "02-12",
+                    102
+                ],
+                [
+                    "02-13",
+                    128
+                ],
+                [
+                    "02-14",
+                    152
+                ],
+                [
+                    "02-15",
+                    184
+                ],
+                [
+                    "02-16",
+                    207
+                ],
+                [
+                    "02-17",
+                    225
+                ],
+                [
+                    "02-18",
+                    254
+                ],
+                [
+                    "02-19",
+                    274
+                ],
+                [
+                    "02-20",
+                    299
+                ],
+                [
+                    "02-21",
+                    316
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        },
+        {
+            "type": "line",
+            "name": "\u5168\u56fd",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "step": false,
+            "data": [
+                [
+                    "02-08",
+                    2654
+                ],
+                [
+                    "02-09",
+                    3277
+                ],
+                [
+                    "02-10",
+                    3998
+                ],
+                [
+                    "02-11",
+                    4739
+                ],
+                [
+                    "02-12",
+                    5644
+                ],
+                [
+                    "02-13",
+                    6726
+                ],
+                [
+                    "02-14",
+                    8094
+                ],
+                [
+                    "02-15",
+                    9415
+                ],
+                [
+                    "02-16",
+                    10851
+                ],
+                [
+                    "02-17",
+                    12562
+                ],
+                [
+                    "02-18",
+                    14388
+                ],
+                [
+                    "02-19",
+                    16153
+                ],
+                [
+                    "02-20",
+                    18271
+                ],
+                [
+                    "02-21",
+                    20650
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u6e56\u5317",
+                "\u91cd\u5e86",
+                "\u5168\u56fd"
+            ],
+            "selected": {
+                "\u6e56\u5317": true,
+                "\u91cd\u5e86": true,
+                "\u5168\u56fd": true
+            },
+            "show": true,
+            "left": "60%",
+            "top": "5%",
+            "orient": "horizontal",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "axis",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "shadow"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "02-08",
+                "02-09",
+                "02-10",
+                "02-11",
+                "02-12",
+                "02-13",
+                "02-14",
+                "02-15",
+                "02-16",
+                "02-17",
+                "02-18",
+                "02-19",
+                "02-20",
+                "02-21"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "type": "value",
+            "name": "\u4eba\u6570",
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "axisTick": {
+                "show": true,
+                "alignWithLabel": false,
+                "inside": false
+            },
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "text": "2-8\u81f32-22\u4e4b\u95f4\u7d2f\u8ba1\u6cbb\u6108\u75c5\u4f8b\u53d8\u5316\u8d8b\u52bf",
+            "left": "20%",
+            "top": "5%",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_a8512226ba544658bf6123355ca9c54c.setOption(option_a8512226ba544658bf6123355ca9c54c);
+    </script>
+                <div id="46ee2d8083c44e4ea5b51a469c967718" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_46ee2d8083c44e4ea5b51a469c967718 = echarts.init(
+            document.getElementById('46ee2d8083c44e4ea5b51a469c967718'), 'white', {renderer: 'canvas'});
+        var option_46ee2d8083c44e4ea5b51a469c967718 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#bc5090",
+        "#ffa600",
+        "#ff6361",
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "line",
+            "name": "\u6e56\u5317",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "step": false,
+            "data": [
+                [
+                    "02-08",
+                    780
+                ],
+                [
+                    "02-09",
+                    871
+                ],
+                [
+                    "02-10",
+                    974
+                ],
+                [
+                    "02-11",
+                    1068
+                ],
+                [
+                    "02-12",
+                    1202
+                ],
+                [
+                    "02-13",
+                    1318
+                ],
+                [
+                    "02-14",
+                    1457
+                ],
+                [
+                    "02-15",
+                    1596
+                ],
+                [
+                    "02-16",
+                    1696
+                ],
+                [
+                    "02-17",
+                    1789
+                ],
+                [
+                    "02-18",
+                    1921
+                ],
+                [
+                    "02-19",
+                    2029
+                ],
+                [
+                    "02-20",
+                    2144
+                ],
+                [
+                    "02-21",
+                    2250
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        },
+        {
+            "type": "line",
+            "name": "\u91cd\u5e86",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "step": false,
+            "data": [
+                [
+                    "02-08",
+                    2
+                ],
+                [
+                    "02-09",
+                    2
+                ],
+                [
+                    "02-10",
+                    2
+                ],
+                [
+                    "02-11",
+                    3
+                ],
+                [
+                    "02-12",
+                    3
+                ],
+                [
+                    "02-13",
+                    4
+                ],
+                [
+                    "02-14",
+                    5
+                ],
+                [
+                    "02-15",
+                    5
+                ],
+                [
+                    "02-16",
+                    5
+                ],
+                [
+                    "02-17",
+                    5
+                ],
+                [
+                    "02-18",
+                    5
+                ],
+                [
+                    "02-19",
+                    5
+                ],
+                [
+                    "02-20",
+                    6
+                ],
+                [
+                    "02-21",
+                    6
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        },
+        {
+            "type": "line",
+            "name": "\u5168\u56fd",
+            "connectNulls": false,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "step": false,
+            "data": [
+                [
+                    "02-08",
+                    812
+                ],
+                [
+                    "02-09",
+                    909
+                ],
+                [
+                    "02-10",
+                    1017
+                ],
+                [
+                    "02-11",
+                    1114
+                ],
+                [
+                    "02-12",
+                    1258
+                ],
+                [
+                    "02-13",
+                    1381
+                ],
+                [
+                    "02-14",
+                    1524
+                ],
+                [
+                    "02-15",
+                    1666
+                ],
+                [
+                    "02-16",
+                    1772
+                ],
+                [
+                    "02-17",
+                    1870
+                ],
+                [
+                    "02-18",
+                    2006
+                ],
+                [
+                    "02-19",
+                    2120
+                ],
+                [
+                    "02-20",
+                    2239
+                ],
+                [
+                    "02-21",
+                    2348
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "zlevel": 0,
+            "z": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u6e56\u5317",
+                "\u91cd\u5e86",
+                "\u5168\u56fd"
+            ],
+            "selected": {
+                "\u6e56\u5317": true,
+                "\u91cd\u5e86": true,
+                "\u5168\u56fd": true
+            },
+            "show": true,
+            "left": "60%",
+            "top": "5%",
+            "orient": "horizontal",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "axis",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "shadow"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "02-08",
+                "02-09",
+                "02-10",
+                "02-11",
+                "02-12",
+                "02-13",
+                "02-14",
+                "02-15",
+                "02-16",
+                "02-17",
+                "02-18",
+                "02-19",
+                "02-20",
+                "02-21"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "type": "value",
+            "name": "\u4eba\u6570",
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "axisTick": {
+                "show": true,
+                "alignWithLabel": false,
+                "inside": false
+            },
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "text": "2-8\u81f32-22\u4e4b\u95f4\u7d2f\u8ba1\u6b7b\u4ea1\u75c5\u4f8b\u53d8\u5316\u8d8b\u52bf",
+            "left": "20%",
+            "top": "5%",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_46ee2d8083c44e4ea5b51a469c967718.setOption(option_46ee2d8083c44e4ea5b51a469c967718);
+    </script>
+    </div>
+
+    <script>
+    </script>
+    <script>
+        (function() {
+            containers = document.getElementsByClassName("chart-container");
+            if(containers.length > 0) {
+                containers[0].style.display = "block";
+            }
+        })()
+
+        function showChart(evt, chartID) {
+            let containers = document.getElementsByClassName("chart-container");
+            for (let i = 0; i < containers.length; i++) {
+                containers[i].style.display = "none";
+            }
+
+            let tablinks = document.getElementsByClassName("tablinks");
+            for (let i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = "tablinks";
+            }
+
+            document.getElementById(chartID).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>

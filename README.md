@@ -1,2 +1,2 @@
-# COVID19_visualization
-COVID19数据可视化尝试
+# COVID-19
+ visualization
